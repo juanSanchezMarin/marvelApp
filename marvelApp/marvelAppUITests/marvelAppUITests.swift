@@ -28,12 +28,6 @@ class marvelAppUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        var interactor: CharacterInteractor = CharacterInteractorImpl(repository: CharacterRepositoryImpl())
-
-        interactor.retrieveCharacters(page: Int(0), nameStartsWith: nil) { (result, characters) in
-            print(result)
-        }
-
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

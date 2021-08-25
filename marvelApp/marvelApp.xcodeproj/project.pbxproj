@@ -46,10 +46,6 @@
 		A035584526D59E6D00E3AA58 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035584426D59E6D00E3AA58 /* LaunchView.swift */; };
 		A035584726D59E7800E3AA58 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035584626D59E7800E3AA58 /* LaunchViewController.swift */; };
 		A035584926D59E8100E3AA58 /* LaunchWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035584826D59E8100E3AA58 /* LaunchWireframe.swift */; };
-		A035584A26D6A26700E3AA58 /* CharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582326D5989E00E3AA58 /* CharacterInteractor.swift */; };
-		A035584B26D6A8E500E3AA58 /* CharacterInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582126D5988200E3AA58 /* CharacterInteractorImpl.swift */; };
-		A035584C26D6A8F400E3AA58 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582626D598FA00E3AA58 /* CharacterRepository.swift */; };
-		A035584E26D6A96D00E3AA58 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582B26D599A400E3AA58 /* MD5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -536,10 +532,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A035584B26D6A8E500E3AA58 /* CharacterInteractorImpl.swift in Sources */,
-				A035584C26D6A8F400E3AA58 /* CharacterRepository.swift in Sources */,
-				A035584E26D6A96D00E3AA58 /* MD5.swift in Sources */,
-				A035584A26D6A26700E3AA58 /* CharacterInteractor.swift in Sources */,
 				A03557E926D590CF00E3AA58 /* marvelAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
