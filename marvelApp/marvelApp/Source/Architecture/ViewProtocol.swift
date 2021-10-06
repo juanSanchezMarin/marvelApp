@@ -9,12 +9,16 @@ import Foundation
 
 protocol ViewProtocol: AnyObject {
 
-  func setupUI()
-  func localizeView()
+    /// Setup the UI view.
+    func setupUI()
+
+    /// Localized UI view.
+    func localizeView()
 }
 
+// MARK: - Extension with empty default implementation.
 extension ViewProtocol {
 
-  func setupUI() {}
-  func localizeView() {}
+    func setupUI() {}
+    func localizeView() {}
 }

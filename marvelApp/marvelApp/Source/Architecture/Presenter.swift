@@ -7,15 +7,25 @@
 
 protocol Presenter: AnyObject {
 
-  func viewDidUpdate(status: ViewStatus)
+    /// Handle UI status updates to take some actions.
+    ///
+    /// - Parameter status: current UI status (based on iOS view life cycle).
+    func viewDidUpdate(status: ViewStatus)
 }
 
+/// Enum to know the status for the view (based on view controller life cycle)
+///
+/// - didLoad: view did load life cycle event
+/// - willAppear: view will appear life cycle event
+/// - didAppear: did appear life cycle event
+/// - willDisappear: will disappear life cycle event
+/// - didDisappear: did disappear life cycle event
 enum ViewStatus: Int {
 
-  case didLoad, willAppear, didAppear, willDisappear, didDisappear
+    case didLoad, willAppear, didAppear, willDisappear, didDisappear
 
-  init() {
+    init() {
 
-    self = .didLoad
-  }
+        self = .didLoad
+    }
 }
