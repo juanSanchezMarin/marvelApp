@@ -23,6 +23,8 @@ class CharacterViewCell: UITableViewCell {
   }
 }
 
+// MARK: Extension for public functions.
+
 extension CharacterViewCell {
 
   static func createCell(tableView: UITableView) -> CharacterViewCell {
@@ -32,7 +34,3 @@ extension CharacterViewCell {
     return cell
   }
 }
-
-private extension CharacterViewCell {
-}
-

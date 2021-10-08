@@ -1,5 +1,4 @@
 # marvelApp
-
 # Project info
 
 Xcode 12.4
@@ -73,4 +72,3 @@ https://github.com/CodeNationDev/
 # Version History
 
 - 0.0.1
-

@@ -19,12 +19,13 @@ class CharacterInteractorImpl: CharacterInteractor {
                           nameStartsWith: String?,
                           output: @escaping(_ result: CharacterResult, _ characters: [Character]?) -> Void) {
     self.repository.getAllCharacters(page: page, nameStartsWith: nameStartsWith) { (result, characters) in
+        
       switch result {
-      case .success:
-        output(.success, characters)
-      case .error:
-        output(.error, nil)
-      }
+          case .success:
+            output(.success, characters)
+          case .error:
+            output(.error, nil)
+          }
     }
   }
 }

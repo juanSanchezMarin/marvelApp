@@ -34,7 +34,6 @@
 		A035582426D5989E00E3AA58 /* CharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582326D5989E00E3AA58 /* CharacterInteractor.swift */; };
 		A035582726D598FA00E3AA58 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582626D598FA00E3AA58 /* CharacterRepository.swift */; };
 		A035582926D5992200E3AA58 /* CharacterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582826D5992200E3AA58 /* CharacterRepositoryImpl.swift */; };
-		A035582C26D599A400E3AA58 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582B26D599A400E3AA58 /* MD5.swift */; };
 		A035583126D599EE00E3AA58 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035583026D599EE00E3AA58 /* SessionManager.swift */; };
 		A035583326D599FF00E3AA58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035583226D599FF00E3AA58 /* Constants.swift */; };
 		A035583626D59A6500E3AA58 /* CharacterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035583526D59A6500E3AA58 /* CharacterViewCell.swift */; };
@@ -46,6 +45,8 @@
 		A035584526D59E6D00E3AA58 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035584426D59E6D00E3AA58 /* LaunchView.swift */; };
 		A035584726D59E7800E3AA58 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035584626D59E7800E3AA58 /* LaunchViewController.swift */; };
 		A035584926D59E8100E3AA58 /* LaunchWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035584826D59E8100E3AA58 /* LaunchWireframe.swift */; };
+		A035C922270A1AFE00C3EBE7 /* CharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582326D5989E00E3AA58 /* CharacterInteractor.swift */; };
+		A08E4C3A270E1CE10090D765 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A08E4C39270E1CE10090D765 /* CryptoSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +100,6 @@
 		A035582326D5989E00E3AA58 /* CharacterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInteractor.swift; sourceTree = "<group>"; };
 		A035582626D598FA00E3AA58 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		A035582826D5992200E3AA58 /* CharacterRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryImpl.swift; sourceTree = "<group>"; };
-		A035582B26D599A400E3AA58 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		A035583026D599EE00E3AA58 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A035583226D599FF00E3AA58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A035583526D59A6500E3AA58 /* CharacterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewCell.swift; sourceTree = "<group>"; };
@@ -118,6 +118,7 @@
 			files = (
 				A035583B26D59CA800E3AA58 /* Alamofire in Frameworks */,
 				A035583E26D59CEB00E3AA58 /* AlamofireImage in Frameworks */,
+				A08E4C3A270E1CE10090D765 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +165,7 @@
 				A03557F626D5912700E3AA58 /* UI */,
 				A03557F826D5913A00E3AA58 /* Source */,
 				A03557F726D5912E00E3AA58 /* Resources */,
-				A03557C826D590CC00E3AA58 /* SceneDelegate.swift */,
 				A03557CA26D590CC00E3AA58 /* ViewController.swift */,
-				A03557CF26D590CF00E3AA58 /* Assets.xcassets */,
 				A03557D426D590CF00E3AA58 /* Info.plist */,
 			);
 			path = marvelApp;
@@ -202,6 +201,7 @@
 		A03557F726D5912E00E3AA58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A03557CF26D590CF00E3AA58 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -210,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				A03557F926D591C300E3AA58 /* App */,
-				A035582A26D5999300E3AA58 /* Helper */,
 				A035582F26D599DF00E3AA58 /* Managers */,
 				A03557FB26D5923A00E3AA58 /* Scenes */,
 				A035581C26D597F300E3AA58 /* Models */,
@@ -223,6 +222,7 @@
 		A03557F926D591C300E3AA58 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A03557C826D590CC00E3AA58 /* SceneDelegate.swift */,
 				A03557C626D590CC00E3AA58 /* AppDelegate.swift */,
 				A035581426D5965600E3AA58 /* AppWireframe.swift */,
 			);
@@ -309,14 +309,6 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		A035582A26D5999300E3AA58 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				A035582B26D599A400E3AA58 /* MD5.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		A035582F26D599DF00E3AA58 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +358,7 @@
 			packageProductDependencies = (
 				A035583A26D59CA800E3AA58 /* Alamofire */,
 				A035583D26D59CEB00E3AA58 /* AlamofireImage */,
+				A08E4C39270E1CE10090D765 /* CryptoSwift */,
 			);
 			productName = marvelApp;
 			productReference = A03557C326D590CC00E3AA58 /* marvelApp.app */;
@@ -441,6 +434,7 @@
 			packageReferences = (
 				A035583926D59CA800E3AA58 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				A035583C26D59CEB00E3AA58 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				A08E4C38270E1CE10090D765 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 			);
 			productRefGroup = A03557C426D590CC00E3AA58 /* Products */;
 			projectDirPath = "";
@@ -489,7 +483,6 @@
 				A035581726D596AC00E3AA58 /* Configurator.swift in Sources */,
 				A035584526D59E6D00E3AA58 /* LaunchView.swift in Sources */,
 				A03557CB26D590CC00E3AA58 /* ViewController.swift in Sources */,
-				A035582C26D599A400E3AA58 /* MD5.swift in Sources */,
 				A035583626D59A6500E3AA58 /* CharacterViewCell.swift in Sources */,
 				A035583126D599EE00E3AA58 /* SessionManager.swift in Sources */,
 				A035580726D5930500E3AA58 /* DetailView.swift in Sources */,
@@ -524,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A035C922270A1AFE00C3EBE7 /* CharacterInteractor.swift in Sources */,
 				A03557DE26D590CF00E3AA58 /* marvelAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,6 +861,14 @@
 				minimumVersion = 4.2.0;
 			};
 		};
+		A08E4C38270E1CE10090D765 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -879,6 +881,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A035583C26D59CEB00E3AA58 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
 			productName = AlamofireImage;
+		};
+		A08E4C39270E1CE10090D765 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A08E4C38270E1CE10090D765 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

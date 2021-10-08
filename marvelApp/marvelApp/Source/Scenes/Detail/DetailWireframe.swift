@@ -7,10 +7,14 @@
 
 import UIKit
 
+/// Wireframe protocol to define routing.
 protocol DetailWireframe: AnyObject {
 }
 
-extension DetailViewController: DetailWireframe {
+// MARK: - UIViewController extension to implement wireframe protocol.
 
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {}
+extension DetailViewController: DetailWireframe {
+    
+    /// Configure next scene.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {}
 }
