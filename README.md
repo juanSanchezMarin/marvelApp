@@ -65,10 +65,6 @@ No api key should be stored in a repository, end less more at a public repositor
 
 Juan Sánchez Marín - <a href="https://www.linkedin.com/in/juan-s%C3%A1nchez-mar%C3%ADn-9387037a">LinkedIN</a> - <a href="mailto:juanxo2505@gmail.com">Email</a>
 
-Distributed under the MIT license. See LICENSE for more information.
-
-https://github.com/CodeNationDev/
-
 # Version History
 
 - 0.0.1
