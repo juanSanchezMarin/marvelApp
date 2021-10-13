@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ut-Ol-sp5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ut-Ol-sp5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -105,7 +106,7 @@
         <!--Home View Controller-->
         <scene sceneID="9zg-8c-XjK">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="LBu-dD-yyL" customClass="HomeViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="LBu-dD-yyL" customClass="HomeViewController" customModule="marvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tlk-nu-VyR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,11 +145,14 @@
         <!--Launch View Controller-->
         <scene sceneID="reQ-0q-qGI">
             <objects>
-                <viewController storyboardIdentifier="LaunchViewController" id="7ut-Ol-sp5" customClass="LaunchViewController" customModule="MarvelHeroes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchViewController" id="7ut-Ol-sp5" customClass="LaunchViewController" customModule="marvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qf0-3q-chQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dfx-z2-In6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Gg0-ra-O1G">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                                 <constraints>
@@ -161,7 +165,11 @@
                         <viewLayoutGuide key="safeArea" id="Wo5-d2-FxS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dfx-z2-In6" firstAttribute="top" secondItem="Qf0-3q-chQ" secondAttribute="top" id="2Rb-n4-J1t"/>
+                            <constraint firstItem="Wo5-d2-FxS" firstAttribute="trailing" secondItem="dfx-z2-In6" secondAttribute="trailing" id="Dsq-xS-HuA"/>
+                            <constraint firstAttribute="bottom" secondItem="dfx-z2-In6" secondAttribute="bottom" id="NaD-j4-sOJ"/>
                             <constraint firstItem="Gg0-ra-O1G" firstAttribute="centerY" secondItem="Qf0-3q-chQ" secondAttribute="centerY" id="fLJ-YE-soo"/>
+                            <constraint firstItem="dfx-z2-In6" firstAttribute="leading" secondItem="Wo5-d2-FxS" secondAttribute="leading" id="iNN-0u-vAm"/>
                             <constraint firstItem="Gg0-ra-O1G" firstAttribute="centerX" secondItem="Qf0-3q-chQ" secondAttribute="centerX" id="qv8-OL-K2a"/>
                         </constraints>
                     </view>
@@ -171,10 +179,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0z-NQ-lOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="43"/>
+            <point key="canvasLocation" x="18.840579710144929" y="42.857142857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Background" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
