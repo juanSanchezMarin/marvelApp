@@ -13,8 +13,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var nameLabel: MarvelLabel!
+    @IBOutlet weak var descriptionTextView: MarvelTextView!
 
     var presenter: DetailPresenter?
 
@@ -58,7 +58,7 @@ extension DetailViewController: DetailView {
     func show(character: Character) {
         guard let name = character.name, let description = character.description else { return }
         self.nameLabel.text = name
-        self.descriptionLabel.text = description.isEmpty ? "This character has no description." : description
+        self.descriptionTextView.text = description.isEmpty ? "This character has no description." : description
 
         guard let urlImage = character.thumbnail?.url,
               let url = URL(string: urlImage) else {

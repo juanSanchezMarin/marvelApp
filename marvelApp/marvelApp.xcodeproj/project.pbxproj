@@ -46,6 +46,10 @@
 		A035584926D59E8100E3AA58 /* LaunchWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035584826D59E8100E3AA58 /* LaunchWireframe.swift */; };
 		A035C922270A1AFE00C3EBE7 /* CharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035582326D5989E00E3AA58 /* CharacterInteractor.swift */; };
 		A08E4C3A270E1CE10090D765 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A08E4C39270E1CE10090D765 /* CryptoSwift */; };
+		A0985395271800C90054EA3C /* MarvelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0985394271800C90054EA3C /* MarvelLabel.swift */; };
+		A0985397271801AB0054EA3C /* Marvel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0985396271801AB0054EA3C /* Marvel-Regular.ttf */; };
+		A098539B271805C80054EA3C /* MarvelColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A098539A271805C80054EA3C /* MarvelColors.swift */; };
+		A098539D27181DFE0054EA3C /* MarvelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A098539C27181DFE0054EA3C /* MarvelTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +102,10 @@
 		A035584426D59E6D00E3AA58 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		A035584626D59E7800E3AA58 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		A035584826D59E8100E3AA58 /* LaunchWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchWireframe.swift; sourceTree = "<group>"; };
+		A0985394271800C90054EA3C /* MarvelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelLabel.swift; sourceTree = "<group>"; };
+		A0985396271801AB0054EA3C /* Marvel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marvel-Regular.ttf"; sourceTree = "<group>"; };
+		A098539A271805C80054EA3C /* MarvelColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelColors.swift; sourceTree = "<group>"; };
+		A098539C27181DFE0054EA3C /* MarvelTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,9 @@
 			children = (
 				A03557CC26D590CC00E3AA58 /* Main.storyboard */,
 				A03557D126D590CF00E3AA58 /* LaunchScreen.storyboard */,
+				A0985394271800C90054EA3C /* MarvelLabel.swift */,
+				A098539A271805C80054EA3C /* MarvelColors.swift */,
+				A098539C27181DFE0054EA3C /* MarvelTextView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 		A03557F726D5912E00E3AA58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A0985396271801AB0054EA3C /* Marvel-Regular.ttf */,
 				A03557CF26D590CF00E3AA58 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -400,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0985397271801AB0054EA3C /* Marvel-Regular.ttf in Resources */,
 				A03557D326D590CF00E3AA58 /* LaunchScreen.storyboard in Resources */,
 				A03557D026D590CF00E3AA58 /* Assets.xcassets in Resources */,
 				A035583826D59A6E00E3AA58 /* CharacterViewCell.xib in Resources */,
@@ -425,13 +438,16 @@
 				A035584526D59E6D00E3AA58 /* LaunchView.swift in Sources */,
 				A03557CB26D590CC00E3AA58 /* ViewController.swift in Sources */,
 				A035583626D59A6500E3AA58 /* CharacterViewCell.swift in Sources */,
+				A0985395271800C90054EA3C /* MarvelLabel.swift in Sources */,
 				A035583126D599EE00E3AA58 /* SessionManager.swift in Sources */,
+				A098539B271805C80054EA3C /* MarvelColors.swift in Sources */,
 				A035580726D5930500E3AA58 /* DetailView.swift in Sources */,
 				A035581126D5957500E3AA58 /* HomeView.swift in Sources */,
 				A03557FF26D5926500E3AA58 /* DetailConfigurator.swift in Sources */,
 				A035583326D599FF00E3AA58 /* Constants.swift in Sources */,
 				A035582726D598FA00E3AA58 /* CharacterRepository.swift in Sources */,
 				A035580F26D5955500E3AA58 /* HomePresenter.swift in Sources */,
+				A098539D27181DFE0054EA3C /* MarvelTextView.swift in Sources */,
 				A03557C726D590CC00E3AA58 /* AppDelegate.swift in Sources */,
 				A035584926D59E8100E3AA58 /* LaunchWireframe.swift in Sources */,
 				A035582926D5992200E3AA58 /* CharacterRepositoryImpl.swift in Sources */,
