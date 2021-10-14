@@ -13,12 +13,11 @@ class marvelAppTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-
     }
 
     /// Test to check webservice API call getAllCharacters.
     func testGetAllCharacters() {
-        let expectation = expectation(description: "Your expectation")
+        let exp = expectation(description: "Get All Characters")
         repository.getAllCharacters(page: 0, nameStartsWith: nil) {
             (result, characters) in
             switch result {
@@ -28,7 +27,7 @@ class marvelAppTests: XCTestCase {
                 case .error:
                     XCTFail("Test failed testGetAllCharacters")
             }
-            expectation.fulfill()
+            exp.fulfill()
         }
 
         waitForExpectations(timeout: 10) { (error) in
@@ -36,9 +35,9 @@ class marvelAppTests: XCTestCase {
     }
 
     /// Test webservice API call check first element.
-    func testFirstCharacter() {
+    func testGetFirstCharacter() {
         let characterTest = Character(id: 1011334, name: "3-D Man", description: "", resourceURI: "http://gateway.marvel.com/v1/public/characters/1011334", thumbnail: Image(path: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784", ext: "jpg"))
-        let expectation = expectation(description: "Your expectation")
+        let exp = expectation(description: "Get First Character")
         repository.getAllCharacters(page: 0, nameStartsWith: nil) {
             (result, characters) in
             switch result {
@@ -48,7 +47,7 @@ class marvelAppTests: XCTestCase {
                 case .error:
                     XCTFail("Test failed testFirstCharacter")
             }
-            expectation.fulfill()
+            exp.fulfill()
         }
 
         waitForExpectations(timeout: 10) { (error) in
